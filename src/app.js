@@ -1,5 +1,5 @@
-const express = require('express');
-const routes = require('./routes');
+import express from 'express';
+import routes from './routes';
 
 class App {
   constructor(){
@@ -20,4 +20,7 @@ class App {
 
 // estou criando uma instancia da classe app
 // e exportando o server
-module.exports = new App().server;
+//module.exports = new App().server;
+
+// como add o sucrase agora posso usar
+export default new App().server;

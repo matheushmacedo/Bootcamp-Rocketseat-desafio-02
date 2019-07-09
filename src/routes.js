@@ -1,11 +1,15 @@
 // aqui ficam todas as rotas do app
-const { Router} = require('express');
+import { Router} from 'express';
 
 const routes = new Router();
 
 // agora posso chamar a rota direto por aqui
 routes.get('/', (req, res) => {
-  return res.json({ message: 'Hello world' });
+  return res.json({ message: 'Hello world 2222' });
 });
 
-module.exports = routes;
+// apos instalar o sucrase nas dependencias dev
+// posso chamar de outra forma o exports
+//module.exports = routes;
+
+export default routes;
